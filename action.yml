@@ -1,0 +1,16 @@
+name: Setup ccache
+description: Set up ccache and add it to the PATH.
+author: Alex Jurkiewicz
+inputs:
+  max-size:
+    description: This value is used to control the maximum size of ccache's cache.
+    default: "150M"
+  extra-config:
+    description: If set, this string is appended to the `~/.ccache.conf` config file.
+    defaut: ""
+runs:
+  using: "node12"
+  main: "dist/index.js"
+branding:
+  icon: "code"
+  color: "yellow"

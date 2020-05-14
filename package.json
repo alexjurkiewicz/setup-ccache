@@ -1,0 +1,35 @@
+{
+  "name": "setup-ccache",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Setup ccache action",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write **/*.ts",
+    "format-check": "prettier --check **/*.ts",
+    "release": "ncc build src/setup-ccache.ts && git add -f dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexjurkiewicz/setup-ccache.git"
+  },
+  "keywords": [
+    "actions",
+    "ccache",
+    "setup"
+  ],
+  "author": "Alex Jurkiewicz",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.3"
+  },
+  "devDependencies": {
+    "@actions/exec": "^1.0.4",
+    "@actions/io": "^1.0.2",
+    "@types/node": "^12.12.31",
+    "@zeit/ncc": "^0.22.0",
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
+  }
+}
