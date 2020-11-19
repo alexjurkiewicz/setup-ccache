@@ -38,3 +38,9 @@ log_file = /tmp/ccache.log
 
 * `max-size` Set the maximum size of the ccache directory
 * `extra-config` Extra config that will be appended to `~/.ccache/ccache.conf`
+
+## Contributing
+
+1. Make your change to `src/setup-ccache.ts`
+2. Run `npm run-script build`
+3. Submit a pull request
