@@ -14,7 +14,7 @@ Windows / rpm-based distros are **not** supported. (PRs to improve this situatio
       - name: Cache compilation
         uses: actions/cache@v1
         with:
-          path: ~/.ccache
+          path: ~/.cache/ccache # on mac: ~/Library/Caches/ccache
           key: ccache
       - name: Setup ccache
         uses: alexjurkiewicz/setup-ccache@master
